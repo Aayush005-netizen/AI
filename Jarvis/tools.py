@@ -16,8 +16,8 @@ from langchain_google_community import GoogleSearchAPIWrapper, GoogleSearchRun
 
 # 2. ENVIRONMENT VARIABLES: Ensure your API keys are set correctly.
 #    Replace the placeholder with your actual Google API Key.
-os.environ["GOOGLE_API_KEY"] = "AIzaSyBwaok5lHPK0zZHvsubSvqqcHqa__zg8zU"
-os.environ["GOOGLE_CSE_ID"] = "7627ff4e316a7479d"  # The ID you found earlier
+os.environ["GOOGLE_API_KEY"] = "******"
+os.environ["GOOGLE_CSE_ID"] = "********"  # The ID you found earlier
 
 # 3. SIMPLIFIED INITIALIZATION: The new version of GoogleSearchRun does not
 #    need the 'api_wrapper' to be passed in. It finds the keys automatically.
@@ -62,4 +62,5 @@ async def search_web(
     except Exception as e:
         logging.error(f"Error searching the web for '{query}': {e}")
         return f"An error occurred while searching the web for '{query}'."
+
 
